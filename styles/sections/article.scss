@@ -94,6 +94,7 @@
 
     &__select {
       @extend %form-value-text;
+      cursor: pointer;
 
       &__icon-arrow {
         position: absolute;
