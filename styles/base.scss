@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "scss-reset/_reset.scss";
+
+:root {
+  --green: #30C690;
+  --red: #EF4444;
+  --black-primary: #0D2A54;
+  --yellow: #FF9900;
+  --blue-primary: #2B41B7;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black-primary);
+  background-color: #faf8f6;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    padding: 32px 0;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  max-width: 115px;
+}

@@ -1,0 +1,43 @@
+.evaluate {
+  overflow: hidden;
+  &__btn {
+    align-self: center;
+  }
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 45px;
+    margin-left: auto;
+    padding: 40px 0 80px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1266px) {
+      max-width: 1200px;
+      flex-direction: row;
+      overflow: visible;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    list-style: decimal;
+
+    @media screen and (min-width: 768px) and (max-width: 1267px) {
+      padding-left: 40px;
+    }
+
+    @media screen and (min-width: 1266px) {
+      margin-bottom: 64px;
+    }
+  }
+}

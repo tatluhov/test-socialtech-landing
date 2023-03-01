@@ -1,0 +1,100 @@
+.main {
+  .container {
+    position: relative;
+  }
+
+  &__wrapper {
+    padding: 24px 0 40px;
+    @media screen and (min-width: 1266px) {
+      padding: 80px 0 52px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 700px;
+      padding-right: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+
+  &__label {
+    align-self: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #D0DBF1;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black-primary);
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 22px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+      row-gap: 16px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    align-self: center;
+    @media screen and (min-width: 768px) {
+      align-self: flex-start;
+    }
+  }
+
+  &__img {
+    padding: 0 88px;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 500px;
+      background-color: transparent;
+    }
+  }
+}

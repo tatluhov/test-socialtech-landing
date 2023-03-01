@@ -1,0 +1,132 @@
+%form-value-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black-primary);
+}
+
+.article {
+  padding: 80px 0 40px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: 1266px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__content {
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__txt {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &__form {
+    min-width: 288px;
+    // TODO: возможно лучше на всю ширину в мобильной версии, но для удобства использования она меньше и по центру
+    //width: 100%;
+    padding: 16px;
+    border: 1px solid #D0DBF1;
+    border-radius: 8px;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+    //@media screen and (min-width: 768px) {
+    //  width: auto;
+    //}
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--black-primary);
+      text-align: center;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    &__label {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border: 1px solid #D0DBF1;
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding: 12px 16px;
+
+      &.disabled, &[disabled] {
+        filter: opacity(0.3);
+      }
+
+      &.error {
+        border-color: var(--red);
+      }
+
+      &.success {
+        border-color: var(--green);
+      }
+    }
+
+    &__select {
+      @extend %form-value-text;
+
+      &__icon-arrow {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+
+    &__input {
+      @extend %form-value-text;
+      border: none;
+    }
+
+    &__helper-text {
+      position: absolute;
+      bottom: -23px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      display: none;
+
+      .error & {
+        color: var(--red);
+      }
+
+      .success & {
+        color: var(--green)
+      }
+    }
+
+    &__btn {
+      display: block;
+      text-align: center;
+    }
+  }
+}

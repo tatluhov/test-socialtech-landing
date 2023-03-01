@@ -1,0 +1,33 @@
+.clients {
+  padding: 24px 0 40px;
+  background-color: #FFFFFF;
+
+  @media screen and (min-width: 1266px) {
+    padding: 55px 0 60px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      gap: 50px;
+    }
+  }
+}
